@@ -1,24 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Header /> // Property 'title' is missing in type '{}' but required in type 'Props'. */}
+      <Header title='This is an React APP' />
+      <Header title='This is a prop Title being based down with type definition and no color ' />
+      <Header title='This is a prop Title being based down with type definition w/ color' color="black" />
     </div>
   );
 }
